@@ -1,0 +1,82 @@
+header {
+    width: 100%;
+    background-color: lightblue;
+  }
+
+.box {
+    width: 200px;
+    height: 200px
+  }
+
+  .lesson {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    background-color: #fffacd;
+    font-size: 24px;
+    text-align: left;
+}
+
+/* List items in navigation bar */
+li {
+    /* Sets display to inline */
+    display: inline;
+    list-style-type: none;
+    font-size: 40px;
+  }
+  
+  /* Boxes */
+  img {
+    /* Sets display to block */
+    display: block;
+    /*Sets margins to center elements*/
+  margin: 20px;
+  /* Padding property */
+  padding: 20px;
+  /* Border property */
+  border: 9px solid darkblue;
+  }
+
+  /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
+/*common breakpoints for widths of devices:
+  • 320px — 480px: Mobile devices
+  • 481px — 768px: iPads, Tablets
+  • 769px — 1024px: Small screens, laptops
+  • 1025px — 1200px: Desktops, large screens*/
+/* Tablets - header changes color */
+@media screen and (max-width: 992px) {
+    header {
+      background: #772014;
+    }
+  }
+  
+  /* Large smartphones - navbar changes color */
+  @media screen and (max-width: 768px) {
+    nav {
+      background-color: #bb8588;
+    }
+    
+  }
+  
+  /* Small smartphones - image placeholders change color */
+  @media screen and (max-width: 576px) {
+    .sample-img {
+      background-color: #8ac4ff;
+      
+    }
+  }
+
+  
+.products {
+    display: flex;
+    flex-direction: column; 
+    /* Centers along the main axis determined by flex-direction */
+    justify-content: center;/* left to right*/
+    /* Centers along the opposite axis */
+    align-items: center;/* top to bottom*/
+    width: 90%;
+    /* Uses the height of the viewport */
+    height: 100vh;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: 2px;
+  }
+  
