@@ -1,13 +1,19 @@
 header {
     width: 100%;
-    background-color: lightblue;
+    background-color: linear-gradient(#e66465, #9198e5);
   }
 
+  .card, .card header, .card img {
+    flex-direction: row row-reverse column column-reverse;
+  }
+  
 .box {
     width: 200px;
     height: 200px
   }
-
+.css snippet{
+user-select: all;
+}
   .lesson {
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     background-color: #fffacd;
@@ -35,29 +41,24 @@ li {
   border: 9px solid darkblue;
   }
 
-  /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
-/*common breakpoints for widths of devices:
-  • 320px — 480px: Mobile devices
-  • 481px — 768px: iPads, Tablets
-  • 769px — 1024px: Small screens, laptops
-  • 1025px — 1200px: Desktops, large screens*/
-/* Tablets - header changes color */
-@media screen and (max-width: 992px) {
+ 
+/* desktop media adjust */
+@media screen and (max-width: 1200px) {
     header {
       background: #772014;
     }
   }
   
-  /* Large smartphones - navbar changes color */
-  @media screen and (max-width: 768px) {
+  /* tablet and laptop media adjust*/
+  @media screen and (max-width: 1024px) {
     nav {
       background-color: #bb8588;
     }
     
   }
   
-  /* Small smartphones - image placeholders change color */
-  @media screen and (max-width: 576px) {
+  /* mobile Small smartphones media adjust */
+  @media screen and (max-width: 768px) {
     .sample-img {
       background-color: #8ac4ff;
       
